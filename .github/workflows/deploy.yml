@@ -53,3 +53,4 @@ jobs:
               --env-file ~/puthaplnraohms/.env.production.backend \
               -p 5001:5001 \
               ${{ secrets.DOCKER_USERNAME }}/hms.backend:latest
+            docker image prune -f
